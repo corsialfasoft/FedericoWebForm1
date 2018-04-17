@@ -128,7 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="DatabaseRichieste.sql" />
+    <Content Include="RicercaPezzo - Copia.aspx" />
+    <Content Include="ElencoCercati.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -187,12 +189,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="DataAccessObject.cs" />
+    <Compile Include="RicercaPezzo - Copia.aspx.cs">
+      <DependentUpon>RicercaPezzo - Copia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="RicercaPezzo - Copia.aspx.designer.cs">
+      <DependentUpon>RicercaPezzo - Copia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElencoCercati.aspx.cs">
+      <DependentUpon>ElencoCercati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElencoCercati.aspx.designer.cs">
+      <DependentUpon>ElencoCercati.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

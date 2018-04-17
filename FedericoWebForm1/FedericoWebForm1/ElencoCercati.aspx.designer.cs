@@ -10,15 +10,24 @@
 namespace FedericoWebForm1 {
     
     
-    public partial class SiteMaster {
+    public partial class RicercaPezzo {
         
         /// <summary>
-        /// Controllo MainContent.
+        /// Controllo Cod.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox Cod;
+        
+        /// <summary>
+        /// Controllo Desc.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Desc;
     }
 }

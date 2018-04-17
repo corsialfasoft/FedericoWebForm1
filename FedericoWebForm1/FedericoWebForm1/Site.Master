@@ -1,4 +1,7 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FedericoWebForm1.SiteMaster" %>
+﻿<%@ Master Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="Site.master.cs" 
+    Inherits="FedericoWebForm1.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -54,7 +57,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">Informazioni</a></li>
-                        <li><a runat="server" href="~/Contact">Contatto</a></li>
+                        <li><a runat="server" href="~/RicercaPezzo">Ricerca</a></li>
                     </ul>
                 </div>
             </div>
