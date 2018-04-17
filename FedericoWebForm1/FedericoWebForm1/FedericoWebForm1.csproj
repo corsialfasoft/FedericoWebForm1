@@ -129,8 +129,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="DatabaseRichieste.sql" />
-    <Content Include="RicercaPezzo - Copia.aspx" />
-    <Content Include="ElencoCercati.aspx" />
+    <Content Include="Elenco.aspx" />
+    <Content Include="Dettaglio.aspx" />
+    <Content Include="RicercaPezzo.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -190,19 +191,26 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="DataAccessObject.cs" />
-    <Compile Include="RicercaPezzo - Copia.aspx.cs">
-      <DependentUpon>RicercaPezzo - Copia.aspx</DependentUpon>
+    <Compile Include="Elenco.aspx.cs">
+      <DependentUpon>Elenco.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RicercaPezzo - Copia.aspx.designer.cs">
-      <DependentUpon>RicercaPezzo - Copia.aspx</DependentUpon>
+    <Compile Include="Elenco.aspx.designer.cs">
+      <DependentUpon>Elenco.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ElencoCercati.aspx.cs">
-      <DependentUpon>ElencoCercati.aspx</DependentUpon>
+    <Compile Include="Dettaglio.aspx.cs">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ElencoCercati.aspx.designer.cs">
-      <DependentUpon>ElencoCercati.aspx</DependentUpon>
+    <Compile Include="Dettaglio.aspx.designer.cs">
+      <DependentUpon>Dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RicercaPezzo.aspx.cs">
+      <DependentUpon>RicercaPezzo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RicercaPezzo.aspx.designer.cs">
+      <DependentUpon>RicercaPezzo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
