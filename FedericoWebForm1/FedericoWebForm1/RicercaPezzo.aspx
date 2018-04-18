@@ -18,19 +18,14 @@
     <div class="bordo" style="border-bottom: 2px solid black; padding:5px;"></div>
     
     <div class="container">
-    <%if (prodotto.Id != 0){ %>
-    <div class="row">
-    <div class="col-sm-4"> <b>ID</b> </div>
-    <div class="col-sm-4"> <b>Descrizione</b> </div>
-    </div>
-
-    <div class="row">
-    <div class="col-sm-4"> <%= prodotto.Id %> </div>
-    <div class="col-sm-4"> <%= prodotto.Descrizione %></div>
-    </div> 
-        <% } %>
-
-   PostBackUrl="~/Dettaglio.aspx"      
+        
+       <div class="table" style="margin-top:25px">
+        <asp:Table ID="Table1" runat="server" width="100%"
+            CellPadding="20"
+            GridLines="None"
+            HorizontalAlign="Center">
+        </asp:Table>
+     </div>         
     </div>
 
 </asp:Content>

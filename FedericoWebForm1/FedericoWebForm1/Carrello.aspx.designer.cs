@@ -10,6 +10,6 @@
 namespace FedericoWebForm1 {
     
     
-    public partial class Elenco {
+    public partial class Carrello {
     }
 }

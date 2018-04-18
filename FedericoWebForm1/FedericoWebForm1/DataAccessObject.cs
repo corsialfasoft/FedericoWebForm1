@@ -11,7 +11,8 @@ namespace FedericoWebForm1 {
 	public class Prodotto {
 		public int Id{ get;set;}
 		public string Descrizione{ get;set;}
-		public int Quantita{ get;set;}		
+		public int Quantita{ get;set;}	
+		public int QuantitaRichiesta { get; set;}
        }
 	
 		
@@ -44,6 +45,42 @@ namespace FedericoWebForm1 {
 			
 			return product;
 		}
+
+		public int RichiestaOrdine() {
+		int Request=0;
+		Prodotto product = new Prodotto();
+		List<Prodotto> Listona = new List<Prodotto>();
+		SqlConnection connection = new SqlConnection(GetConnection());
+		connection.Open();
+		SqlCommand command = new SqlCommand("Request",connection);
+		command.CommandType = System.Data.CommandType.StoredProcedure;
+		command.Parameters.Add("@data",SqlDbType.DateTime).Value = DateTime.Now.ToString("dd-MM-yyyy") ;
+		SqlDataReader reader = command.ExecuteReader();
+		
+				while(reader.Read()) {
+					Request = (int)reader.GetDecimal(0);
+				}
+				reader.Close();
+				command.Dispose();
+				return Request;
+		}
+
+		public void Compra(int Request,Prodotto prodotto)
+		{
+			SqlConnection connection = new SqlConnection(GetConnection());
+			
+				connection.Open();
+				SqlCommand command = new SqlCommand("AddOrdine",connection);
+				command.CommandType=System.Data.CommandType.StoredProcedure;
+				command.Parameters.Add("@Richiesta",System.Data.SqlDbType.Int).Value=Request;
+				command.Parameters.Add("@Prodotti",System.Data.SqlDbType.Int).Value=prodotto.Id;
+				command.Parameters.Add("@Quantita",System.Data.SqlDbType.Int).Value=prodotto.Quantita;
+				command.ExecuteNonQuery();
+				command.Dispose();				
+				connection.Close();
+				
+		}
+
 
 		public List<Prodotto> RicercaperDescrizione(string Desc) {
 		Prodotto product = new Prodotto();

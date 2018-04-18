@@ -58,6 +58,7 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">Informazioni</a></li>
                         <li><a runat="server" href="~/RicercaPezzo">Ricerca</a></li>
+                        <li><a runat="server" href="~/Carrello">Carrello</a></li>
                     </ul>
                 </div>
             </div>
