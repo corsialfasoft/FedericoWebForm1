@@ -28,11 +28,11 @@ namespace FedericoWebForm1 {
 		{
 			DataAccessObject DAO = new DataAccessObject();
 			int Request = DAO.RichiestaOrdine();
-			prodotti = Session["carrello"] as List<Prodotto>;
+			prodotti = Session["listaRichieste"] as List<Prodotto>;
 			foreach (Prodotto element in prodotti) {
 				DAO.Compra(Request,element);
 			}
-			Session["carrello"]=new List<Prodotto>();
+			Session["listaRichieste"]=new List<Prodotto>();
 			prodotti=new List<Prodotto>();
 			
 				var url=String.Format($"~/RicercaPezzo.aspx");
