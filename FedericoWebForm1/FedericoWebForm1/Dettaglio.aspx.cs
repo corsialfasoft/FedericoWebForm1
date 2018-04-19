@@ -4,10 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using FedericoWebForm1; 
+using FedericoWebForm1.Control; 
 	
 namespace FedericoWebForm1 {
+
 	public partial class Dettaglio : Page {
+
+	
 				
 		protected void Page_Load(object sender,EventArgs e) {
 		 DataAccessObject Nuovo = new DataAccessObject();
@@ -15,13 +18,14 @@ namespace FedericoWebForm1 {
             if (prodotto == null) {
                 Response.Redirect("~/RicercaPezzo.aspx?Message='prodotto non trovato'");
             }
+				dettaglio.prodotto = prodotto;
 		}
 		DataAccessObject Prova = new DataAccessObject();
 		public  Prodotto prodotto {get; set;}
 		public List<Prodotto> prodotti {get; set;}
 		public string Message{get; set;}
 		
-
+		
 		
 
 		protected void Conferma_Click(object sender,EventArgs e) {
@@ -41,9 +45,10 @@ namespace FedericoWebForm1 {
             } else {
                
             }
+
+    }
 			
 		
 		}
 	}
 
-}

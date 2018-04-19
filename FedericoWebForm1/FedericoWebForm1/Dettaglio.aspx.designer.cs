@@ -13,6 +13,15 @@ namespace FedericoWebForm1 {
     public partial class Dettaglio {
         
         /// <summary>
+        /// Controllo dettaglio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::FedericoWebForm1.Control.DettaglioUC dettaglio;
+        
+        /// <summary>
         /// Controllo QuantitaRichiesta.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,23 @@ namespace FedericoWebForm1 {
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox QuantitaRichiesta;
+        
+        /// <summary>
+        /// Controllo ReqFieldValCodice.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqFieldValCodice;
+        
+        /// <summary>
+        /// Controllo RangeValCodice.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValCodice;
     }
 }
